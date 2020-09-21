@@ -1,0 +1,33 @@
+buildscript {
+	repositories {
+		jcenter()
+		google()
+	}
+	
+	dependencies {
+		classpath 'com.android.tools.build:gradle:::ANDROID_GRADLE_PLUGIN::'
+	}
+}
+
+apply plugin: 'com.android.library'
+
+android {
+	compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
+	buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+	
+	defaultConfig {
+        minSdkVersion 4
+        targetSdkVersion 23
+    }
+	
+	buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+	api project(':deps:extension-api')
+}

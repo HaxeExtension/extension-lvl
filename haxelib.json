@@ -1,0 +1,13 @@
+{
+  "name": "extension-lvl",
+  "url": "https://github.com/HaxeExtension/extension-lvl",
+  "license": "MIT",
+  "tags": ["licensing", "verification", "google", "android", "extension"],
+  "description": "Google Play License Verification extension",
+  "version": "0.0.1",
+  "releasenote": "First! :)",
+  "contributors": ["pozirk"],
+  "dependencies": {
+
+  }
+}
