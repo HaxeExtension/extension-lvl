@@ -28,7 +28,7 @@ Add the following line with Base64-encoded RSA public key from your Google Play 
 ```xml
 <set name="LVL_PUBLIC_KEY" value="[YOUR_APP_PUBLIC_KEY]" />
 ```
-
+Example of how to check if app is licensed or not:
 ```haxe
 import extension.lvl.ExtensionLVL;
 
